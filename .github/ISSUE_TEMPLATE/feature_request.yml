@@ -1,0 +1,24 @@
+name: Feature request
+description: Suggest something new or a change
+labels: [enhancement]
+body:
+  - type: textarea
+    id: feature
+    attributes:
+      label: What you would like
+    validations:
+      required: true
+
+  - type: textarea
+    id: situation
+    attributes:
+      label: When you need it
+      description: The situation where you need it, and how you deal with it now.
+    validations:
+      required: true
+
+  - type: textarea
+    id: more
+    attributes:
+      label: Anything else
+      description: Screenshots, or how other apps do something similar.

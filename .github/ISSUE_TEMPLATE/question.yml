@@ -1,0 +1,10 @@
+name: Other
+description: A question, or anything that doesn't fit the other forms
+labels: [question]
+body:
+  - type: textarea
+    id: message
+    attributes:
+      label: Your question or message
+    validations:
+      required: true

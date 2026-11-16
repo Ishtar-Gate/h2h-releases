@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: A site can't be downloaded
+    url: https://github.com/yt-dlp/yt-dlp/blob/master/supportedsites.md
+    about: Highway2Hell downloads through yt-dlp. Check whether yt-dlp supports the site first.

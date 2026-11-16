@@ -1,0 +1,52 @@
+name: Bug report
+description: Something doesn't work as expected
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Before you start:
+        - Make sure you are using the latest version.
+        - Search the [existing issues](https://github.com/Ishtar-Gate/h2h-releases/issues?q=is%3Aissue) to see if someone has already reported it.
+        - If you can, attach diagnostics (see the last field). It makes finding the cause much faster.
+
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: Shown at the top of the About page.
+      placeholder: v0.2.0
+    validations:
+      required: true
+
+  - type: dropdown
+    id: system
+    attributes:
+      label: System
+      options:
+        - Windows
+        - macOS (Apple silicon)
+        - macOS (Intel)
+        - Linux
+    validations:
+      required: true
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: What you did, what you saw, and what you expected instead. If there was an error message, paste its text too.
+    validations:
+      required: true
+
+  - type: input
+    id: link
+    attributes:
+      label: Link
+      description: The video or playlist link that has the problem, if any. Leave out videos that can only be watched after signing in.
+
+  - type: textarea
+    id: diagnostics
+    attributes:
+      label: Diagnostics
+      description: On the About page, click "Export diagnostics", then drag the saved .zip file here. It contains no cookies, and passwords are masked.

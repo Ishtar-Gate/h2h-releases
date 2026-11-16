@@ -1,0 +1,28 @@
+name: Translation
+description: Fix a translation, or add a new language
+labels: [translation]
+body:
+  - type: dropdown
+    id: language
+    attributes:
+      label: Language
+      options:
+        - 中文
+        - English
+        - 日本語
+        - Another language (new)
+    validations:
+      required: true
+
+  - type: textarea
+    id: where
+    attributes:
+      label: Where
+      description: Which page, button or sentence. A screenshot helps.
+    validations:
+      required: true
+
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Suggested text
